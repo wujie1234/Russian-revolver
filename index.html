@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一发入魂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>一发入<span id="secret-trigger">魂</span></h1>
+        <div class="game-area">
+            <div class="revolver">
+                <img src="revolver.png" alt="左轮手枪" id="gun">
+            </div>
+            <div class="controls">
+                <button id="spin">装填子弹并转动转轮</button>
+                <button id="shoot">开枪</button>
+            </div>
+            <div id="message"></div>
+            <div id="stats">
+                <p>第 <span id="shot-count">0</span> 枪</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 添加音效元素 -->
+    <audio id="gunshot" src="gunshot.mp3"></audio>
+    <audio id="empty-click" src="empty-click.mp3"></audio>
+    <audio id="spin-sound" src="spin-sound.mp3"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

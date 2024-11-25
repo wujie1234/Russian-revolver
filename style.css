@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.game-area {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.revolver {
+    margin: 20px 0;
+}
+
+.revolver img {
+    width: 200px;
+    transition: transform 0.5s;
+}
+
+.revolver img.spin {
+    transform: rotate(1080deg);
+    transition: transform 1s;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.controls button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#message {
+    margin: 20px 0;
+    font-size: 18px;
+    min-height: 27px;
+}
+
+#stats {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translate(0, 0) rotate(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translate(-2px, -2px) rotate(-1deg); }
+    20%, 40%, 60%, 80% { transform: translate(2px, 2px) rotate(1deg); }
+}
+
+.revolver img.shake {
+    animation: shake 0.5s;
+}
+ 
